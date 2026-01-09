@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geovany Bezerra | Fullstack Developer</title>
+    <meta name="description" content="Personal portfolio and blog of Geovany Bezerra.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout">
+        <header class="header">
+            <nav class="nav">
+                <a href="#intro" class="logo">Geovany Bezerra</a>
+               
+                <ul class="nav-links">
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <main>
+            <section id="intro" class="section hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title" data-i18n="hero.title">Welcome!</h1>
+                        <p class="hero-subtitle" data-i18n="hero.subtitle">
+                            Hi, I'm Geovany Bezerra, Fullstack Developer since 2020. I build digital experiences with a focus on efficiency, quality and user experience, besides robust and scalable integrations.
+                        </p>
+                        <a href="#projects" class="btn" data-i18n="hero.cta">View Work</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://github.com/geozera.png" alt="Geovany Bezerra" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="section-header">
+                    <h2 data-i18n="section.projects">Projects</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="project-grid">
+                    <!-- Placeholder Project 1 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>Fleet Control</h3>
+                            <a href="https://github.com/geozera/fleet_control" target="_blank" class="project-link">github.com</a>
+                        </div>
+                        <p class="project-desc" data-i18n="project.fleet_control">Real-Time Vehicle Tracking</p>
+                        <ul class="project-tags">
+                            <li>.NET Minimal APIs</li>
+                            <li>Angular</li>
+                            <li>SignalR</li>
+                        </ul>
+                    </article>
+
+                    <!-- Placeholder Project 2 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>"How I'd do?"</h3>
+                            <a href="https://github.com/geozera/how_id_do" target="_blank" class="project-link">github.com</a>
+                        </div>
+                        <p class="project-desc" data-i18n="project.how_id_do">Collection of interesting features I observe on other apps, and how I would implement it.</p>
+                        <ul class="project-tags">
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="blog" class="section">
+                <div class="section-header">
+                    <h2 data-i18n="section.thoughts">Thoughts</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="blog-list">
+                    <article class="blog-item">
+                        <span class="blog-date">Oct 12, 2025</span>
+                        <a href="#" class="blog-title">The Beauty of Plain Text</a>
+                        <p class="blog-excerpt">
+                            Why I switched my entire workflow to markdown and why you might want to consider it too. 
+                            Markdown allows for a kind of focus that rich text editors simply cannot provide. 
+                            By removing the ability to fiddle with fonts and spacing while writing, you are forced to focus on the content itself. 
+                            Furthermore, markdown is portable. It can be converted to HTML, PDF, or even Word documents with ease. 
+                            It's the ultimate format for writers who want their words to last. The simplicity of the syntax means you can read it even without a previewer.
+                        </p>
+                    </article>
+                     <article class="blog-item">
+                        <span class="blog-date">Sep 28, 2025</span>
+                        <a href="#" class="blog-title">Rethinking React Patterns</a>
+                        <p class="blog-excerpt">
+                            A deep dive into server components and how they shift the mental model of frontend development.
+                            React Server Components (RSC) represent a paradigm shift in how we build React applications.
+                            Instead of sending everything to the client, we can now choose what runs on the server and what runs in the browser.
+                            This reduces bundle sizes significantly and improves initial load performance.
+                            However, it also requires us to rethink how we handle state and side effects.
+                            The boundary between client and server is now more fluid, but also requires more intentionality.
+                        </p>
+                    </article>
+                     <article class="blog-item">
+                        <span class="blog-date">Aug 15, 2025</span>
+                        <a href="#" class="blog-title">Digital Minimalism</a>
+                        <p class="blog-excerpt">
+                            Curating your digital tools to reclaim your attention span.
+                            In a world where every app is fighting for your attention, digital minimalism is not just a lifestyle choice, but a survival strategy.
+                            It's about intentionally choosing tools that add value to your life and ruthlessly eliminating the rest.
+                            We often install apps "just in case" or keep notifications on out of FOMO.
+                            But the cost is our ability to think deeply.
+                            By curating our digital environment, we can reclaim our time and mental clarity.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact" class="footer">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://github.com/geozera" target="_blank">GitHub</a>
+                    <a href="mailto:geovanyccv@gmail.com">Email</a>
+                </div>
+                 <p class="copyright">&copy; <span id="year"></span> Geovany Bezerra. <span data-i18n="footer.rights">All rights reserved.</span></p>
+                 <div class="footer-controls">
+                     <button id="lang-toggle" class="lang-toggle" aria-label="Switch Language">PT</button>
+                     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                         <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                     </button>
+                 </div>   
+            </div>
+        </footer>
+    </div>
+    <div id="blog-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <span class="modal-date"></span>
+            <h2 class="modal-title"></h2>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

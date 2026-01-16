@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'project.fleet_control': 'Real-Time Vehicle Tracking using SignalR and WebSockets.',
             'project.how_id_do': 'Collection of interesting features I observe on other apps, and how I would implement it.',
             'section.thoughts': 'Thoughts',
-            'footer.rights': 'All rights reserved.'
+            'footer.rights': 'All rights reserved.',
+            'project.blog': 'Simple blog'
         },
         pt: {
             'nav.projects': 'Projetos',
@@ -30,7 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'project.fleet_control': 'Rastreamento Veicular em Tempo Real utilizando SignalR e WebSockets.',
             'project.how_id_do': 'Coleção de funcionalidades interessantes que observo em outros apps e como eu as implementaria.',
             'section.thoughts': 'Reflexões',
-            'footer.rights': 'Todos os direitos reservados.'
+            'footer.rights': 'Todos os direitos reservados.',
+            'project.blog': 'Blog simples'
         }
     };
 
